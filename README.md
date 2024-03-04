@@ -4,22 +4,22 @@
 
 new Progress(containerSelector, options) - инициализация с параметрами
 
-• containerSelector - Строка с CSS-селектором HTML-элемента контейнера Progress(обязательный параметр)
-• options - объект с параметрами Progress(необязательный параметр)
+- containerSelector - Строка с CSS-селектором HTML-элемента контейнера Progress(обязательный параметр)
+- options - объект с параметрами Progress(необязательный параметр)
 
 Например:
 
 <pre>
-    new Progress('.progress', { initialValue: 50, animated: true, hidden: false });
+new Progress('.progress', { initialValue: 50, animated: true, hidden: false });
 </pre>
 
 ## Параметры options:
 
-• initialValue - параметр базового состояния Normal, которым можно управлять
+- initialValue - параметр базового состояния Normal, которым можно управлять
 размером дуги, отражающей прогресс. Тип number от 0 до 100.
-• animated - параметр независимого состояния Animated, при котором блок или его элементы
+- animated - параметр независимого состояния Animated, при котором блок или его элементы
 начинают вращаться с некоторым периодом по часовой стрелке. Тип boolean.
-• hidden - параметр состояния скрывающего прогресс. Тип boolean.
+- hidden - параметр состояния скрывающего прогресс. Тип boolean.
 
 ## Доступные команды
 

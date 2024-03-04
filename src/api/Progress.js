@@ -14,7 +14,7 @@ export default class Progress {
   };
 
   /**
-   * Класс для создания экземпляра Progress
+   * Конструктор класса Progress
    * @param {string} containerSelector - Селектор секции с Progress
    * @param {object} options - Первичные настройки
    */

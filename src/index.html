@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="progress">
+        <div class="container progress__container">
+            <h2 class="progress__title">Progress</h2>
+            <div class="progress__content">
+                <svg class="progress__circle" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#eaf0f6" stroke-width="8">
+                    </circle>
+                    <circle class="progress__indicator" cx="50" cy="50" r="40" fill="none" stroke-width="8"></circle>
+                </svg>
+                <div class="progress__сontroller">
+                    <div class="progress__input-box">
+                        <input class="progress__value-input" id="valueInput" type="number" placeholder="0" min="0"
+                            max="100">
+                        <label for="valueInput">Value</label>
+                    </div>
+                    <div class="progress__input-box">
+                        <input class="custom-toggle__input progress__animate-toggle" id="animateToggle" type="checkbox">
+                        <label class="custom-toggle__label" for="animateToggle"></label>
+                        <span>Animate</span>
+                    </div>
+                    <div class="progress__input-box">
+                        <input class="custom-toggle__input progress__hide-toggle" id="hideToggle" type="checkbox">
+                        <label class="custom-toggle__label" for="hideToggle"></label>
+                        <span>Hide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

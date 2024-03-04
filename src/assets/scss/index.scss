@@ -1,0 +1,85 @@
+@import '_vars';
+@import 'normalize.css';
+@import '_global';
+
+.progress {
+  &__container {
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (orientation: landscape) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__circle {
+    transform: rotate(-90deg);
+    max-width: 160px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    flex-shrink: 0;
+  }
+
+  &__indicator {
+    max-width: 160px;
+    width: 100%;
+    stroke: $main-color;
+    stroke-dasharray: 251.4;
+    stroke-dashoffset: 251.4;
+    transition: stroke-dashoffset 1.4s ease;
+  }
+
+  &__сontroller {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__input-box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__value-input {
+    width: 50px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 22px;
+    border: 1px solid #000;
+  }
+
+  .animated {
+    animation: spin 4s linear infinite;
+    transform-origin: center;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
